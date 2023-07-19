@@ -157,6 +157,35 @@ main {
     height: 240px;
 }
 
+/* Sponsor Content */
+
+.sponsor-content {
+    text-align: center;
+    width: 542px;
+    padding: 0px 400px;
+}
+
+.sponsor-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 40px 400px;
+    margin: 150px 0px;
+}
+
+.foot-p {
+    color: #424242;
+    font-size: 1.5rem;
+}
+
 /* Mobile Devices */
 
 @media screen and (max-width:576px) {
@@ -173,7 +202,8 @@ main {
         text-align: center;
     }
 
-    .teams, .fact-card-container {
+    .teams,
+    .fact-card-container {
         flex-direction: column;
         gap: 24px;
     }
@@ -187,12 +217,33 @@ main {
         padding-left: 40px;
         padding-right: 40px;
     }
-    
+
     .fact .teams-description {
         width: 350px;
     }
+
     .fact {
         padding: 0px 20px;
+    }
+
+    .sponsor-content {
+        padding: 020px;
+        text-align: left;
+        width: 300px;
+    }
+    .sponsor-images {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        padding: 0px 100px;
+        width: 165px;
+    }
+    footer {
+        text-align: center;
+        border-radius: 8px;
+        background: #FFF4E7;
+        padding: 40px 20px;
+        margin: 150px 0px;
     }
 }
 
@@ -223,14 +274,34 @@ main {
         padding-left: 100px;
         padding-right: 100px;
     }
+
     .fact .teams-description {
         width: 350px;
     }
+
     .fact {
         padding: 0px 100px;
     }
+
     .fact-card-container {
         flex-wrap: wrap;
         gap: 20px;
+    }
+    .sponsor-content {
+        padding: 0px auto;
+        text-align: center;
+        width: 300px;
+    }
+    .sponsor-images {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 0px 30px;
+    }
+    footer {
+        text-align: center;
+        border-radius: 8px;
+        background: #FFF4E7;
+        padding: 40px 20px;
+        margin: 150px 0px;
     }
 }
