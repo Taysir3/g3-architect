@@ -1,7 +1,20 @@
+/* shared styles */
 * {
     font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primary {
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    cursor: pointer;
+}
+
+/* header styles */
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -52,15 +65,45 @@ nav li a {
     color: #727272;
     font-family: Work Sans;
     font-weight: 400;
+    margin-bottom: 32px;
 }
 
-.btn-primary {
-    padding: 20px 25px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    background: #FF900E;
-    border: none;
-    margin: 24px 0px;
+.banner img {
+    margin-top: 32px;
+    width: 100%;
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav li {
+        padding-right: 30px;
+        text-align: center;
+    }
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 50px;
+    }
+
+    nav li {
+        padding-right: 30px;
+        text-align: center;
+    }
 }
